@@ -1,0 +1,8 @@
+(deflisten window :initial "..." "bash ~/.config/eww/scripts/get-title.sh")
+
+(defwidget title []
+  (box
+    (label :class "title"  :text {"${window}" == "" ? "Winters" : "${window}"} :limit-width 50
+    )
+  )
+)

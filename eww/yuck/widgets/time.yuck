@@ -1,0 +1,10 @@
+(defwidget time []
+    (box :orientation "h" :space-evenly "false" :class "time"
+        (label :text " ${hour}" :class "hour" :limit-width 20)
+        (label :text ":" :class "separator" :limit-width 20)
+        (label :text {minute} :class "hour" :limit-width 20)
+))
+
+(defpoll hour :interval "30s"  "date '+%H'")
+(defpoll minute :interval "30s"  "date '+%M'")
+

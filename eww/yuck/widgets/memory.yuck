@@ -1,0 +1,8 @@
+(defwidget mem []
+		(box :class "mem" :vexpand "false" :hexpand "false" 
+            (circular-progress :value {EWW_RAM.used_mem_perc}
+                :class "membar"
+                :thickness 5
+                :tooltip "used ram ${EWW_RAM.used_mem_perc}%"
+                (label :text "" :class "iconmem"))))
+

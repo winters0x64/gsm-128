@@ -1,0 +1,2 @@
+(defwidget winters []
+    (image :path "assets/winters.png" :image-width 50 :image-height 50))

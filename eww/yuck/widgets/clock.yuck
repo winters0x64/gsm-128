@@ -1,0 +1,11 @@
+(defpoll clock_time :interval "5m" "date +\%I")
+(defpoll clock_minute :interval "5s" "date +\%M")
+(defpoll clock_date :interval "10h" "date '+%d/%m'")
+
+
+(defwidget clock []
+  (eventbox :onclick "${EWW_CMD} open calendar --toggle"
+    (box :class "clock" :space-evenly "false" :orientation "h" :spacing "3" 
+      (label :text clock_time :class "clock_time_class" )
+      (label :text "󰇙" :class "clock_time_sep" )
+      (label :text clock_minute :class "clock_minute_class"))))

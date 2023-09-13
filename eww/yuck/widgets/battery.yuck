@@ -1,0 +1,8 @@
+(defwidget bat []
+		(box :class "bat" :vexpand "false" :hexpand "false" 
+            (circular-progress :value {EWW_BATTERY.BAT0.capacity}
+                :class "batbar"
+                :thickness 5
+                :tooltip "battery on ${EWW_BATTERY.BAT0.capacity}%"
+                (label :text "" :class "iconbat"))))
+

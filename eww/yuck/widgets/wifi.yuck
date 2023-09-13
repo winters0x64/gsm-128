@@ -1,0 +1,18 @@
+(defvar wifi_rev false)
+(defpoll COL_WLAN :interval "1s" "bash ~/.config/eww/scripts/wifi.sh --COL")
+(defpoll ESSID_WLAN :interval "1s" "bash ~/.config/eww/scripts/wifi.sh --ESSID")
+(defpoll WLAN_ICON :interval "1s" "bash ~/.config/eww/scripts/wifi.sh --ICON")
+
+(defwidget wifi [] 
+  (eventbox :onhover "${EWW_CMD} update wifi_rev=true"
+			  :onhoverlost "${EWW_CMD} update wifi_rev=false"
+		(box  :space-evenly "false" :spacing "10" :class "wifi" 
+				(button :class "wifi_btn" :onclick "foot nmtui" :wrap "false" :limit-width 12 :style "color: ${COL_WLAN};" WLAN_ICON)
+	(revealer :transition "slideright"
+			  :reveal wifi_rev
+			  :duration "350ms"
+	(label    :class "essid"
+			  :text ESSID_WLAN
+			  :orientation "h"
+			  )))))
+

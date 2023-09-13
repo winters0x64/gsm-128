@@ -1,0 +1,18 @@
+(defpoll volume :interval "0.1s" `pamixer --get-volume`)
+(defvar vol_reveal false)
+
+
+(defwidget volume []
+    (eventbox :onhover "${EWW_CMD} update vol_reveal=true"
+              :onhoverlost "${EWW_CMD} update vol_reveal=false"
+              (box :class "volume " :space-evenly false :orientation "h" :spacing "3"
+                  (label :text "󰕾" :class "volume_icon")
+                  (revealer :transition "slideleft"
+                            :reveal vol_reveal
+                            :duration "350ms"
+                  (scale :class "volbar"
+                         :value volume 
+                         :orientation "h"
+                         :max 100
+                         :min 0
+                         :onchange "pamixer --set-volume {}")))))
