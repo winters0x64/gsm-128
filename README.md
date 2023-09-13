@@ -2,6 +2,8 @@
 
 Minimal,Productive & Aesthetic linux rice
 
+![gragaldia](https://github.com/winters0x64/Gragaldia/blob/main/img.png)
+
 Bar - Eww
 Compositor - Hyprland
 App launcher - Fuzzel
