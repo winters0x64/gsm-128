@@ -1,4 +1,4 @@
-# Gragaldia
+# GSM-128
 
 Minimal,Productive & Aesthetic linux rice
 
