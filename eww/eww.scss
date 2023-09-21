@@ -1,7 +1,7 @@
 $carbon: #161616;
 $black:  #000000;
 $white:  #ffffff;
-$bright_pink:   #ee5396;
+$bright_pink: #ee5396;  
 $green:  #42be65;
 $dark_grey: #262626;
 $cyan: #3ddbd9;
@@ -33,10 +33,11 @@ $magenta: #ff7eb6;
 .workspace-entry {
     font-size: 20px;
     padding-left: 10px;
+    color: $white;
 }
 
 .workspace-entry.current {
-    color: $blue;
+    color: $white;
 }
 
 .time {

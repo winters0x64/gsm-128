@@ -5,4 +5,3 @@
                 :thickness 5
                 :tooltip "battery on ${EWW_BATTERY.BAT0.capacity}%"
                 (label :text "" :class "iconbat"))))
-
