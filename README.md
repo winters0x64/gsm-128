@@ -11,7 +11,7 @@ Terminal - Foot
 Editor - Neovim
 Theme - Oxoblack(Inspired by IBM carbon & oxocarbon)
 
-Version 0.1.0
+Version 0.1.1
 
 Still in the beta version.
 
@@ -31,13 +31,23 @@ Done:
 + eww main bar and theming
 + Got the eww factor
 + fuzzel
++ Git Repo, Code Name.
++ eww launch script
++ swaylock
++ dunst
++ bleachbit(system cleaner)
++ fish
++ zathura
 
 Bins Installed:
-+ yay,nvim,foot,hyprland,hyprpaper,hack nerd font,eww,jq,socat,node,npm,alsa-utils,sof-firmware,pulseaudio,brightnessctl,google-chrome,fuzzel
-  unzip,docker,wget,burpsuite,python-pip,wl-clipboard,otf-daddytimemono-git
++ yay,nvim,foot,hyprland,hyprpaper,ttf-hack-nerd,eww-wayland,jq,socat,node,npm,alsa-utils,sof-firmware,pulseaudio,brightnessctl,google-chrome,fuzzel
+  unzip,docker(service),wget,burpsuite,python-pip,wl-clipboard,otf-daddytimemono-git,dunst
+  swaylock-effects,discord,man,tlp(service),tlp-rdw,bleachbit,zathura,zathura-pdf-mupdf
+  btop,
 
 To Do:
-- Git Repo, Code Name. 
+- Global color pallete
+- Install script
 
 To fix:
 - time :done
@@ -46,9 +56,4 @@ To fix:
 
 
 Later :
-- Power management
-- Hybernation
-- Cpu frequency adjustments
-- Systemwide cleaner
 - Backup system
-- System monitoring and health check
