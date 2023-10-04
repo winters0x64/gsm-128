@@ -1,0 +1,12 @@
+(defpoll username :interval "48h" "whoami")
+(defpoll os :interval "48h" "cat /etc/os-release | awk -F'\"' '/NAME/{print $2}' | head -n 1")
+(defpoll uptime :interval "50s" "uptime -p | sed -e 's/up //;s/ hours,/h/;s/ hour,/h/;s/ minutes/m/;s/ minute/m/'")
+
+
+(defwidget profile []
+    (box :class "profile" :orientation "v" :space-evenly false :spacing 30 :vexpand false
+         :hexpand false
+    (image :path "assets/winters.png" :image-width 100 :image-height 100)
+    (label :text "User  : ${username}   ")
+    (label :text "Distro: ${os}")
+    (label :text "Uptime: ${uptime}       ")))

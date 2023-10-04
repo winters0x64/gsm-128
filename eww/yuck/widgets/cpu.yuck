@@ -1,0 +1,8 @@
+(defwidget cpu []
+	(box :class "cpu" :vexpand "false" :hexpand "false" 
+		(circular-progress :value {EWW_CPU.avg}
+			:class "cpubar"
+			:thickness 10
+			:tooltip "${round(EWW_CPU.cores[0].freq/1000,2)} GHz"
+			(label :text "" :class "iconcpu"))))
+

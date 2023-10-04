@@ -1,0 +1,21 @@
+(deflisten art "bash ~/.config/eww/scripts/media.sh  follow-cover")
+(deflisten title "bash ~/.config/eww/scripts/media.sh  title")
+(deflisten artist "bash ~/.config/eww/scripts/media.sh  artist")
+(deflisten curSongTime "bash ~/.config/eww/scripts/media.sh  current-time")
+(deflisten totSongTime "bash ~/.config/eww/scripts/media.sh  total-time")
+(deflisten status "playerctl --follow status")
+(deflisten statusIcon "bash ~/.config/eww/scripts/media.sh icon")
+(defpoll percentTime :interval "1s" "bash ~/.config/eww/scripts/media.sh percent")
+(defvar playing false)
+
+(defwidget music_wid []
+    (box :class "music_wid" :space-evenly false :spacing 50 :orientation "v"
+        (label :class "music_title"  :limit-width 30 :text "󰎈 ${title}")
+        (box :class "music_track_container" :tooltip "${curSongTime} / ${totSongTime}" :orientation "h" :space-evenly "false" :halign "start" :valign "end"
+            (scale :class "music_track" :min 0 :max 100 :value {percentTime == "" ? 0 : percentTime} :active "true" :halign "start" :onchange "scripts/media track {}")
+            (label :class "music_track_text" :text "${curSongTime} / ${totSongTime}" :halign "end"))
+        (box :class "music_ctls" :space-evenly false :spacing 50 :orientation "h"
+            (button :class "music_prev" :onclick "playerctl previous" "󰒮")
+            (button :class "music_play_pause" :onclick "playerctl play-pause && ${EWW_CMD} update playing=${!playing}" 
+                (label :text {playing==true?"":"󰐊"}))
+            (button :class "music_next" :onclick "playerctl next" "󰒭"))))

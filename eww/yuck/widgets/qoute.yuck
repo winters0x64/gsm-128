@@ -1,0 +1,5 @@
+(defpoll qoutes :interval "24h" "bash ~/.config/eww/scripts/qoutes.sh")
+
+(defwidget qoute []
+    (box :class "qoutes"
+    (label :class "qoutes_text" :text qoutes :wrap true)))

@@ -1,0 +1,8 @@
+(defwidget power []
+    (box :orientation "v" :class "powermenu" :space-evenly false :spacing 50
+        (button :class "power_off" :onclick "shutdown now"
+        (label :text ""))
+        (button :class "power_restart" :onclick "reboot"
+        (label :text ""))
+        (button :class "power_exit" :onclick "hyprctl dispatch exit"
+        (label :text ""))))

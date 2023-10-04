@@ -1,0 +1,158 @@
+@import './colors';
+
+* {
+    all: unset;
+}
+
+.main_bg {
+    font-family:"DaddyTimeMono";
+    font-size: 15px;
+    color: $white;
+    border-radius: 16px;
+    background-color: $black;
+    border: 3px;
+    border-style: solid;
+    border-color: $bright_pink;
+}
+
+.profile {
+    font-size: 20px;
+    font-weight: bolder;
+    background-color:$black;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: $bright_pink;
+}
+
+.power_menu {
+    background-color: $black;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: $bright_pink;
+    font-size: 50px;
+}
+
+.power_off:hover {
+    color: $bright_pink;
+}
+
+.power_restart:hover {
+    color: $magenta;
+}
+
+.power_exit:hover {
+    color: $blue;
+}
+
+.music_wid {
+    background-color: $black;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: $bright_pink;
+}
+
+.music_title {
+    font-weight: bolder;
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+.music_track highlight {
+    all: unset;
+    background-color: $blue;
+    border-radius: 24px;
+}
+
+
+.music_track trough {
+    all: unset;
+    border-radius: 16px;
+    background-color: $dark_grey;
+    min-height: 10px;
+    min-width: 150px;
+  }
+
+.music_track_text {
+    padding-left: 10px;
+}
+
+.music_track_container {
+    padding-left: 60px;
+}
+
+.music_ctls {
+    font-size: 30px;
+    padding-left: 100px;
+}
+
+.music_prev:hover {
+    color: $green;
+}
+
+.music_play_pause:hover {
+    color: $green;
+}
+
+.music_next:hover {
+    color: $green;
+}
+
+.cpu {
+    background-color: $black;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: $bright_pink;
+    color: white;
+}
+
+.iconcpu {
+    font-size: 50px;
+    color: white;
+    padding-right: 10px;
+}
+
+.launcher {
+    font-size: 40px;
+    background-color: $black;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: $bright_pink;
+    padding-right: 10px;
+}
+
+.discord:hover {
+    color: $blue;
+    font-size: 50px;
+}
+
+.code:hover {
+    color: $magenta;
+    font-size: 50px;
+}
+
+.chrome:hover {
+    color: $yellow;
+    font-size: 50px;
+}
+
+.cpubar {
+    color: $magenta;
+    background-color: $dark_grey;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.qoutes {
+    background-color: $black;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+    border-color: $bright_pink;
+}
+
+

@@ -1,0 +1,8 @@
+(defwidget launcher []
+    (box :orientation "v" :class "launcher" :space-evenly true 
+        (button :class "discord" :onclick "discord &"
+        (label :text "󰙯"))
+        (button :class "code" :onclick "code &"
+        (label :text "󰨞"))
+        (button :class "chrome" :onclick "google-chrome-stable &"
+        (label :text ""))))

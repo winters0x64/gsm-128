@@ -1,2 +1,4 @@
 (defwidget winters []
-    (image :path "assets/winters.png" :image-width 50 :image-height 50))
+    (box :class "init_coldx"
+    (button :onclick "bash ~/.config/eww/scripts/coldx_launch.sh"
+    (image :path "assets/winters.png" :image-width 50 :image-height 50))))

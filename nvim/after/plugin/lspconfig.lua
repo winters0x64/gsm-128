@@ -54,3 +54,8 @@ lspconfig.cssls.setup {
 lspconfig.bashls.setup {
     capabilities = capabilities,
 }
+
+lspconfig.tsserver.setup {
+    capabilties = capabilities,
+}
+
