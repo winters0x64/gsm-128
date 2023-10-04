@@ -2,7 +2,7 @@
 
 Minimal,Productive & Aesthetic linux rice
 
-![gsm-128](https://github.com/winters0x64/Gragaldia/blob/main/img.png)
+![gsm-128](https://github.com/winters0x64/gsm-128/blob/main/img.png)
 
 Bar - Eww
 Compositor - Hyprland
