@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## EWW bin
-EWW="eww -c $HOME/.config/eww/"
+EWW="env XDG_CACHE_HOME=/tmp eww -c $HOME/.config/eww/"
 
 ## Run eww daemon if not running already
 if [[ ! `pidof eww` ]]; then

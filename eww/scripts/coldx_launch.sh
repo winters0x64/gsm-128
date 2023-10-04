@@ -1,5 +1,7 @@
 #!/bin/bash
 
+EWW="env XDG_CACHE_HOME=/tmp eww -c $HOME/.config/eww/"
+
 ## window list
 w_ls="
     coldx \
@@ -8,7 +10,7 @@ w_ls="
     music_window \ 
     cpu_window \
     launcher_window \
-    qoutes_window \
+    qoutes_window 
 "
 ## Run eww daemon if not running already
 if [[ ! `pidof eww` ]]; then
@@ -19,7 +21,7 @@ fi
 
 ## Open widgets 
 run_eww() {
-    eww open-many --toggle $w_ls
+    ${EWW} open-many --toggle $w_ls
 }
 
 run_eww
