@@ -1,4 +1,4 @@
-# GSM-128
+# Celestia
 
 Minimal,Productive & Aesthetic linux rice
 
