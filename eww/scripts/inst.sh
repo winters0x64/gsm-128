@@ -32,11 +32,11 @@ apps_install() {
     separator
     echo "[+] Installing...nvim,foot,hyprland,hyprpaper,ttf-hack-nerd,eww-wayland,jq,socat,node,npm,google-chrome,fuzzel,swaylock-effects,discord,bleachbit,otf-daddttimemono-git,code(extensions installed through vsix file)
               btop,qt5-wayland,qt6-wayland,xdg-desktop-portal-hyprland,xdg-desktop-portal-gtk,nwg-look,phocus-gtk-theme-git
-              ttf-jetbrains-mono-nerd"
+              ttf-jetbrains-mono-nerd,nitch"
     echo "[+] bleachbit,zathura,zathura-pdf-mupdf,btop,dunst,playerctl"
     yay -S --needed --noconfirm nvim foot hyprland hyprpaper ttf-hack-nerd eww-wayland jq socat node npm google-chrome fuzzel swaylock-effects discord bleachbit otf-daddttimemono-git
     yay -S --needed --noconfirm bleachbit zathura zathura-pdf-mupdf btop dunst qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk nwg-look phocus-gtk-theme-git
-    yay -S --needed --noconfirm ttf-jetbrains-mono-nerd playerctl
+    yay -S --needed --noconfirm ttf-jetbrains-mono-nerd playerctl nitch
     separator
     echo "[+] Here's a list of apps/dependencies that will be installed as part of Web exploitation"
     separator

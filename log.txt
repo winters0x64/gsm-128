@@ -1,0 +1,39 @@
+Design Goals
++ Aesthetic,minimal,productive
+
+Done:
++ Configured nvim
++ Systemwide oxocarbon theme(Slightly modified version of oxocarbon)
++ Basic foot config
++ hyprpaper
++ fixed nvims lsp
++ eww main bar and theming
++ Got the eww factor
++ fuzzel
++ Git Repo, Code Name.
++ eww launch script
++ swaylock
++ dunst
++ bleachbit(system cleaner)
++ fish
++ zathura
++ Global color pallete
++ Install script
++ gtk theme
++ icon theme
++ eww left bar
+
+Bins Installed:
++ yay,nvim,foot,hyprland,hyprpaper,ttf-hack-nerd,eww-wayland,jq,socat,node,npm,alsa-utils,sof-firmware,pulseaudio,brightnessctl,google-chrome,fuzzel
+  unzip,docker(service),wget,burpsuite,python-pip,wl-clipboard,otf-daddytimemono-git,dunst
+  swaylock-effects,discord,man,tlp(service),tlp-rdw,bleachbit,zathura,zathura-pdf-mupdf,code(extensions installed through vsix file)
+  btop,qt5-wayland,qt6-wayland,xdg-desktop-portal-hyprland,xdg-desktop-portal-gtk,nwg-look,phocus-gtk-theme-git
+  ttf-jetbrains-mono-nerd,playerctl,nitch
+
+To Do:
+- Unixporn post
+
+To fix:
+
+Later :
+- Finished for 1.0 release
